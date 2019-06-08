@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>
+            添加学生信息
+        </title>
+    </head>
+    <style type="text/css">
+        body{
+            min-width:1000px;
+            min-height:1000px;
+            width:100%;
+            overflow:hidden;
+            background:url(1.jpg) no-repeat; 
+            background-size:100%;
+            position:absolute;
+           }
+           .button{
+               background-color:rgb(25, 172, 91) ;
+               border:none;
+               color:rgb(36, 29, 29);
+               padding:15px 32px;
+               text-align:center;
+               text-decoration:none;
+               display:inline-block;
+               font-size:16px;
+               border-radius:12px;
+               box-shadow: 0 8px 16px 0 rgb(15, 15, 15);
+           }
+         a{
+            float:right;
+            margin-right:100px;
+            text-decoration:none;
+          }
+          input[type="text"]{
+              color:brown;
+              width:160px;
+              height:24px;
+              border:1px solid black;
+              font:normal 12px/24px;
+          }
+        </style>
+        <body>
+        <div id="h1" align="center">
+        <img name="image"src="2.png">
+        <a href="http://jwzx.hrbust.edu.cn/homepage/index.do">教务在线</a>
+        <h1 align="center"></h1>
+        </div> 
+        <body>
+            <form method="post" action="add.php">&nbsp;
+                <label for="text"><B>学号：</B></label>
+                <input type="text" size="20" name="sno"><br><br>&nbsp;
+                <label for="text"><B>姓名：</B></label>
+                <input type="text" size="20" name="sname"><br><br>&nbsp;
+                <label for="text"><B>性别：</B></label>
+                <input type="text" size="20" name="sex"><br><br>
+                <label for="text"><B>所在系：</B></label>
+                <input type="text" size="20" name="sdept"><br><br>&nbsp;
+                <label for="text"><B>年级：</B></label>
+                <input type="text" size="20" name="nian"><br><br>&nbsp;
+                <label for="text"><B>班级：</B></label>
+                <input type="text" size="20" name="class"><br><br>&nbsp;
+                <input type="submit" value="添加" class="button">&nbsp;&nbsp;&nbsp;
+                <input type="button" value="信息管理" class="button" onclick="window.location.href='guanlixuesheng.html'">
+            </form>
+        </body>       
+</html>

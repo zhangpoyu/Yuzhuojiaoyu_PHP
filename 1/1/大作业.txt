@@ -1,0 +1,94 @@
+create database jiaowu;
+
+//创建学生
+create user student identified by student
+default tablespace userdata;
+grant connect to student;
+grant resource to student;
+grant select
+on table Student
+to student;
+grant select,insert
+on view pk
+to student;
+
+//创建老师
+create user techer identified by techer
+default tablespace userdata;
+grant connect to techer;
+grant resource to techer;
+grant select,insert,delete,update
+on table Student
+to techer;
+grant select,insert
+on table shiyan 
+to techer;
+
+//创建管理员
+create user guanliyuan identified by guanliyuan
+default tablespace userdata;
+alter user caruser account unlock;
+grant connect to guanliyuan;
+grant resource to guanliyuan;
+grant select,insert,delete,update
+on table guanli,shiyan
+to caruser;
+grant select,insert,delete,update
+on view pk
+to caruser;
+
+
+//创建学生表
+drop table Student;
+create table Student(
+Sno char(20)PRIMARY KEY,
+Sname char(20)NOT NULL,
+Ssex char(10)NOT NULL,
+Sdept char(20) NOT NULL,
+Sjianji char(10)NOT NULL,
+Sclass char(10)NOT NULL);
+
+//创建用户表
+create table guanli(
+username char(10),
+password char(20))
+
+//创建课程表
+create table uers(
+id char(10)PRIMARY KEY,
+name char(20)NOT NULL)
+
+//创建实验表
+create table course(
+course char(20)PRIMARY KEY,
+name char(40)NOT NULL)
+
+//创建实验时间表
+create table date(
+course char(20)PRIMARY KEY,
+date char(20)NOT NULL)
+
+//创建实验视图
+create view pk
+as
+select id,name,date  
+from user,course,date
+where user.id=course.course and course.course=date.course;
+
+//创建实验室表
+create table shiyan(
+sno int PRIMARY KEY,
+state int not null,
+date  char(10),
+course char(10),
+teacher char(10))
+
+//创建学生选课表
+create table xuanke(
+course char(10)not null,
+addr  int,
+date char(10),
+teacher char(10),
+user char(20),
+PRIMARY KEY（coursse,user）)
+

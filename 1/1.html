@@ -1,0 +1,45 @@
+<html><!-- 注册页 -->
+<head>
+<style>
+body{
+min-width:1000px;
+min-height:1000px;
+width:100%;
+overflow:hidden;
+background:url(04.jpg) no-repeat; 
+background-size:100%;
+position:absolute;
+}
+input{
+border-radius:20px;
+color:009393;
+}
+a{
+text-decoration:none;
+size:26px;
+color:#FFF000;
+}
+</style>
+        <title>注册页面</title>
+        <meta content-type:"text/html" charset="utf-8">
+    </head>
+ 
+    <body >
+   
+        <h1  align="center">新用户注册</h1>
+           <a href="1/add.html">系统管理</a>
+        <hr>
+ <div align="center" >
+        <form method="post" action="1.php">
+                    请输入用户名:<input type="text" name="username" placeholder="请输入用户名"><br>      
+                    请输入密码:&nbsp;&nbsp;&nbsp;<input type="password" name="password"  placeholder="请输入密码"><br>  
+                    请确认密码:&nbsp;&nbsp;&nbsp;<input type="password" name="repassword"placeholder="请再次输入密码"><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="注册">&nbsp;&nbsp;    <input type="reset" value="重置">
+            <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type="button" value="已注册直接登录" onclick="window.location.href='2.html'"> 
+            <input type="button" value="老师注册" onclick="window.location.href='b.html'">
+        </form>
+ </div>
+    </body>
+</html>

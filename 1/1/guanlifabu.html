@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>
+           发布实验信息
+        </title>
+    </head>
+    <style type="text/css">
+        body{
+            min-width:1000px;
+            min-height:1000px;
+            width:100%;
+            overflow:hidden;
+            background:url(1.jpg) no-repeat; 
+            background-size:100%;
+            position:absolute;
+           }
+           .button{
+               background-color:rgb(25, 172, 91) ;
+               border:none;
+               color:rgb(36, 29, 29);
+               padding:15px 32px;
+               text-align:center;
+               text-decoration:none;
+               display:inline-block;
+               font-size:16px;
+               border-radius:12px;
+               box-shadow: 0 8px 16px 0 rgb(15, 15, 15);
+           }
+         a{
+            float:right;
+            margin-right:100px;
+            text-decoration:none;
+          }
+        </style>
+        <body>
+        <div id="h1" align="center">
+        <img name="image"src="2.png">
+        <a href="http://jwzx.hrbust.edu.cn/homepage/index.do">教务在线</a>
+        <h1 align="center"></h1>
+        </div> 
+        <div>
+            <form method="post" action="fabu.php" enctype="multipart/form-data">
+                    <h1><B>发布信息：</B></h1>
+                    <textarea name="ss" rows=10 cols=100></textarea>
+                    <br><br>
+                    <label for="file"><B>文件名：</B></label>
+                    <input name="file" type="file" class="button">
+                    <br><br>&nbsp;&nbsp;
+                    <input type="submit" value="发布" class="button">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="重置" class="button">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="返回" class="button" onclick="window.location.href='guanli.html'">
+            </form>
+        </div>
+    </body>       
+</html>

@@ -1,0 +1,5 @@
+create table sc ( 
+studentno int, 
+courseid int, 
+score int, 
+primary key (studentno,courseid) ); 

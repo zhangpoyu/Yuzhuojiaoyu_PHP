@@ -1,0 +1,31 @@
+body{
+	background:#E6E6FA;
+	//text-align:center;
+}
+.div1{
+	font-size:30px;
+	font-family:"宋体";
+	color:#663300;
+	text-align:center;
+}
+.div{
+	 float:right;
+	font-size:25px;
+	font-family:"宋体";
+    color:#333300;
+    float:right;
+}
+
+h1{
+	font-size:40px;
+	font-family:"宋体";
+	color:#663300;
+	text-align:center;
+}
+a{  
+	float:right;
+	text-decoration:none;
+	font-size:30px;
+	font-family:"宋体";
+	color:#003399;
+}
